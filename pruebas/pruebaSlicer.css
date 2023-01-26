@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#root{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#contenedorImg{
+	border: solid blue 2px;
+	border-radius: 10px;
+	display: flex;
+	width: 400px;
+	height: 400px;
+	overflow: auto;
+	justify-content: center;
+}
+
+#buttonSlicer{
+	margin: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	width: 250px;
+}
+#buttonSlicer input{
+	width: 30px;
+	height: 30px;
+	font-size: 25px;
+	background-color: #fff;
+	border: 0;
+	color: rgb(19, 24, 244);
+}
+#buttonSlicer input:hover{
+	box-shadow: ;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inder&family=Monoton&display=swap" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./estilosCSS/style.css">
+	<script src="https://kit.fontawesome.com/ffc43a369a.js" crossorigin="anonymous"></script>
+	<title>BAIRES ATR EVENTOS</title>
+</head>
+<body>
+	<nav id="menu">
+		<i class="fa-solid fa-bars" id="iconMenu"></i>
+		<div id="containerMenu">
+			<div id="LogoATR" class="text">BAIRES ATR</div>
+			<div id="menu_Upper_Container">
+				<ul class="text">
+					<a href="#"><li>Presencial</li></a>
+					<a href="#"><li>Streaming</li></a>
+					<a href="#"><li>Registrarse</li></a>
+					<a href="#"><li>Iniciar Sesion</li></a>
+					<a href="#" id="link_CrearEvento"><li>Crear Evento</li></a>
+				</ul>
+			</div>
+			<i class="fa-solid fa-globe" id="iconChangeLan">
+				<p id="textChangeLan">ES</p>
+			</i>
+			<div id="conteinerSearch">
+				<form>
+					<input type="search" name="txtBuscar" class="textBox" id="searchBox">
+					<div id="containerProvincia" class="containerText">
+						<input type="text" name="provincia" class="textBox">
+						<input type="button" name="desplegarProvincia" value="v">
+					</div>
+					<div id="containerLocalidad" class="containerText">
+						<input type="text" name="localidad" class="textBox">
+						<input type="button" name="desplegarLocalidad" value="v">
+					</div>
+					<div id="containerMes" class="containerText">
+						<input type="text" name="mes" class="textBox">
+						<input type="button" name="desplegarMes" value="v">
+					</div>
+					<input type="button" name="buscar" value="Buscar">
+				</form>
+			</div>
+		</div>
+	</nav>
+	<div class="nextEvents" id="containderNexEvent">
+		<div class="evento" id="actualEvt">
+			<img src="./Imagenes/test.jpg">
+		</div>
+	</div>
+
+	<nav id="slider">
+		<ul>
+			<li id="arrIzq"><i class="fa-solid fa-chevron-left"></i></li>
+			<li><i class="fa-solid fa-circle"></i></li>
+			<li><i class="fa-regular fa-circle"></i></li>
+			<li><i class="fa-regular fa-circle"></i></li>
+			<li id="arrDer"><i class="fa-solid fa-chevron-right"></i></li>
+		</ul>
+	</nav>
+	<div id="containerMain">
+		<div class="mainEvent" id="maitEvent">
+			<img src="./Imagenes/MainEvent.jpg">
+		</div>
+	</div>
+</body>
+</html>
