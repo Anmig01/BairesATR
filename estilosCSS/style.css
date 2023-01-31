@@ -102,8 +102,9 @@ img:hover{
 }
 
 /*                                         MEDIA QUERYS                               */
-@media screen and (min-width:500px){
+@media screen and (min-width:1000px){
 	/*PC*/
+
 	#menu{
 		height: 140px;
 	}
@@ -112,8 +113,10 @@ img:hover{
 		display: none;
 	}
 	#containerMenu{
-		width: 100%;
+		margin: 0 auto;
 		display: grid;
+		grid-template-rows: ;
+		grid-template-columns: minmax(100px, auto);
 		grid-template-rows: repeat(2, 50px);
 
 		align-items: center;
