@@ -57,7 +57,7 @@ img:hover{
 	font-size: 25px;
 	color: #00FFFF;
 }
-/*        estilo del menu desplegable */
+/*     Estilo del menu desplegable   */
 
 #menu_Upper_Container {
 	display: none;
@@ -96,6 +96,7 @@ img:hover{
 
 
 /*------------------------------ Contenido principal -------------------------------------*/
+/*          Eventos proximos          */
 #containderNexEvent{
 	display: flex;
 	justify-content: center;
@@ -113,7 +114,7 @@ img:hover{
 	object-fit: contain;
 
 }
-/*--------------------------------------------------------------------------------------*/
+/*        Botones slider        */
 #slider{
 	display: flex;
 	justify-content: center;
@@ -142,6 +143,7 @@ img:hover{
 	text-align: center;
 }
 #slider li:hover{
+	cursor: pointer;
 	background-color: #ddd;
 }
 
