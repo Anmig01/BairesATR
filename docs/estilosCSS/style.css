@@ -1,3 +1,4 @@
+/*-----------------------    Estilos Generales   ------------------------------------*/
 *{
 	margin: 0;
 	padding: 0;
@@ -8,29 +9,56 @@ img:hover{
 .text{
 	font-family: 'Monoton', cursive;
 }
-/*------------------------------------------------------------------------------------*/
-#menu{
+.hidden{
+	display: none;
+}
+/*----------------------- Barra de navegacion ----------------------------------------*/
+/*     Fondo de la barra de navegacion */
+.nav-menu{
 	background-color: #14008E;
-	width: 100%;
-	height: 50px;
+	/*height: 60px;*/
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 }
-#iconMenu{
-	color: #fff;
-	padding: 10px;
-	margin-left: 10px;
-	font-size: 30px;
-
+/*        icono de barras menu    */
+.icon-bar{
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	margin: 20px;
 }
-#iconMenu:hover{
-	background-color: #250EB1;
+.icon-bar:hover{
+	cursor: pointer;
 }
-#containerMenu{
+/*    Creacion del Icono usando bordes  */
+.icon-bar i{
+	border-top: 3px solid #fff;
+	display: block;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 6px;
+	transition: transform 0.3s;
+}
+/*   Animacion Icono Menu    */
+#nav:checked ~ .icon-bar i:first-child{
+	translate: 0px 8.5px;
+	transform: rotate(45deg);
+}
+#nav:checked ~ .icon-bar i:last-child{
+	transform: rotate(-45deg);
+}
+#nav:checked ~ .icon-bar i:nth-child(2){
 	display: none;
 }
-/*-------------------------------------------------------------------------------------------*/
+
+.containerMenu{
+	display: none;
+}
+
+
+
+/*------------------------------ Contenido principal -------------------------------------*/
 #containderNexEvent{
 	display: flex;
 	justify-content: center;
@@ -112,7 +140,7 @@ img:hover{
 	#iconMenu{
 		display: none;
 	}
-	#containerMenu{
+	.containerMenu{
 		margin: 0 auto;
 		display: grid;
 		grid-template-rows: ;

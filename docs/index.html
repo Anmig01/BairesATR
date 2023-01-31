@@ -13,54 +13,63 @@
 	<title>BAIRES ATR EVENTOS</title>
 </head>
 <body>
-	<nav id="menu">
-		<i class="fa-solid fa-bars" id="iconMenu"></i>
-		<div id="containerMenu">
-			<div id="LogoATR" class="text">BAIRES ATR</div>
-			<div id="menu_Upper_Container">
-				<ul class="text">
-					<a href="#"><li>Presencial</li></a>
-					<a href="#"><li>Streaming</li></a>
-					<a href="#"><li>Registrarse</li></a>
-					<a href="#"><li>Iniciar Sesion</li></a>
-					<a href="#" id="link_CrearEvento"><li>Crear Evento</li></a>
-				</ul>
+<!--         		Inicio Barra de Navegacion                 -->
+	<header>
+		<nav class="nav-menu">
+			<input type="checkbox" id="nav" class="hidden">
+			<label for="nav" class="icon-bar">
+				<i></i>
+				<i></i>
+				<i></i>
+			</label>
+			<div class="containerMenu">
+				<div id="LogoATR" class="text">BAIRES ATR</div>
+				<div id="menu_Upper_Container">
+					<ul class="text">
+						<a href="#"><li>Presencial</li></a>
+						<a href="#"><li>Streaming</li></a>
+						<a href="#"><li>Registrarse</li></a>
+						<a href="#"><li>Iniciar Sesion</li></a>
+						<a href="#" id="link_CrearEvento"><li>Crear Evento</li></a>
+					</ul>
+				</div>
+				<i class="fa-solid fa-globe" id="iconChangeLan">
+					<p id="textChangeLan">ES</p>
+				</i>
+				<div id="conteinerSearch">
+					<form>
+						<input type="search" name="txtBuscar" class="textBox" id="searchBox">
+						<div id="containerProvincia" class="containerText">
+							<select class="textBox">
+								<option>opcion 1</option>
+								<option>opcion 2</option>
+								<option>opcion 3</option>
+								<option>opcion 4</option>
+							</select>
+						</div>
+						<div id="containerLocalidad" class="containerText">
+							<select class="textBox">
+								<option>opcion 1</option>
+								<option>opcion 2</option>
+								<option>opcion 3</option>
+								<option>opcion 4</option>
+							</select>
+						</div>
+						<div id="containerMes" class="containerText">
+							<select class="textBox">
+								<option>opcion 1</option>
+								<option>opcion 2</option>
+								<option>opcion 3</option>
+								<option>opcion 4</option>
+							</select>
+						</div>
+						<input type="button" name="buscar" value="Buscar">
+					</form>
+				</div>
 			</div>
-			<i class="fa-solid fa-globe" id="iconChangeLan">
-				<p id="textChangeLan">ES</p>
-			</i>
-			<div id="conteinerSearch">
-				<form>
-					<input type="search" name="txtBuscar" class="textBox" id="searchBox">
-					<div id="containerProvincia" class="containerText">
-						<select class="textBox">
-							<option>opcion 1</option>
-							<option>opcion 2</option>
-							<option>opcion 3</option>
-							<option>opcion 4</option>
-						</select>
-					</div>
-					<div id="containerLocalidad" class="containerText">
-						<select class="textBox">
-							<option>opcion 1</option>
-							<option>opcion 2</option>
-							<option>opcion 3</option>
-							<option>opcion 4</option>
-						</select>
-					</div>
-					<div id="containerMes" class="containerText">
-						<select class="textBox">
-							<option>opcion 1</option>
-							<option>opcion 2</option>
-							<option>opcion 3</option>
-							<option>opcion 4</option>
-						</select>
-					</div>
-					<input type="button" name="buscar" value="Buscar">
-				</form>
-			</div>
-		</div>
-	</nav>
+		</nav>
+	</header>
+<!--                      Fin Barra de Navegacion                    -->
 	<div class="nextEvents" id="containderNexEvent">
 		<div class="evento" id="actualEvt">
 			<img src="./Imagenes/test.jpg">
