@@ -1,7 +1,8 @@
 window.onload = function () {
 	//todo el codigo va aqui
 	//  ****  Funciones  ****
-	function mueveCirculo(direccion,circulos) {
+
+	function cambiaImg(direccion,circulos,imgEvento) {
 		if (direccion == "Izq") {
 			actualImg--;
 			if(actualImg < 0){
@@ -10,11 +11,14 @@ window.onload = function () {
 		}
 		else if(direccion == "Der"){
 			actualImg++;
-			if(actualImg > 2){
-				actualImg = 2
+			if(actualImg > circulos.length){
+				actualImg = circulos.length;
 			}			
 		}
+
 		circulos[actualImg].className = "fa-solid fa-circle";
+		imgEvento.src = imgsUrl[actualImg]; 
+
 
 		for (let indice = 0; indice < circulos.length; indice++) {
 				if(indice == actualImg){
@@ -23,16 +27,24 @@ window.onload = function () {
 				circulos[indice].className = "fa-regular fa-circle"; 
 			}	
 	}
+
 //  *********   Ejecucion Main   ***********
 	let circulos = document.getElementsByClassName("fa-circle");
 	var actualImg = 0;
 	let btnIzq = document.getElementById("arrIzq");
 	let btnDer = document.getElementById("arrDer");
+	let imgEvento = document.getElementById("imgEvento");
+	var imgsUrl = [
+		"./Imagenes/test.jpg",
+		"./Imagenes/EventoFinAño.jpg",
+		"./Imagenes/EventoAñoNuevo.jpg",
+		"./Imagenes/EventoMusica.jpg"
+		];
 
 	btnIzq.onclick = function(){
-		mueveCirculo("Izq",circulos);
+		cambiaImg("Izq",circulos,imgEvento);
 	}
 	btnDer.onclick = function(){
-		mueveCirculo("Der",circulos);
+		cambiaImg("Der",circulos,imgEvento);
 	}	
 }
